@@ -86,33 +86,27 @@ function App() {
 
   return (
     <>
-      <Router>
-        <button
-          type="button"
-          onClick={handleThemeSwitch}
-          className="fixed p-1 z-10 right-20 top-4 bg-stone-700 text-lg rounded-md dark:bg-white"
-        >
-          {theme === "dark" ? sun : moon}
-        </button>
-        <button
-          type="button"
-          onClick={scrollToTop}
-          className="fixed p-2 bg-stone-900 dark:bg-white rounded-md animate-bounce left-5 bottom-4"
-        >
-          {upArrow}
-        </button>
-        <div className="App bg-white text-stone-900 dark:bg-stone-900 dark:text-stone-300">
-          <div className="max-w-5xl w-11/12 mx-auto">
-            <Navbar/>
-            <Switch>
-              <Route exact path="/">
-                <Home />
-              </Route>
-            </Switch>
-            <Footer />
-          </div>
+      <button
+        type="button"
+        onClick={handleThemeSwitch}
+        className="fixed p-1 z-10 right-20 top-4 bg-stone-700 text-lg rounded-md dark:bg-white"
+      >
+        {theme === "dark" ? sun : moon}
+      </button>
+      <button
+        type="button"
+        onClick={scrollToTop}
+        className="fixed p-2 bg-stone-900 dark:bg-white rounded-md animate-bounce left-5 bottom-4"
+      >
+        {upArrow}
+      </button>
+      <div className="App bg-white text-stone-900 dark:bg-stone-900 dark:text-stone-300">
+        <div className="max-w-5xl w-11/12 mx-auto">
+          <Navbar />
+          <Home />
+          <Footer />
         </div>
-      </Router>
+      </div>
     </>
   );
 }
