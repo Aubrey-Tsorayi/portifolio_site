@@ -3,11 +3,6 @@ import "./App.css";
 import Navbar from "./components/nav.component";
 import Home from "./components/home.componet";
 import Footer from "./components/footer.componet";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-} from "react-router-dom/cjs/react-router-dom.min";
 
 function App() {
   const [theme, setTheme] = useState(null);

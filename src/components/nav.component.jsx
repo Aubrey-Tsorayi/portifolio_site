@@ -1,8 +1,6 @@
-import { Link } from "react-router-dom/cjs/react-router-dom";
-
 function Navbar() {
   return (
-    <nav class=" flex fixed max-w-5xl w-11/12 mx-auto justify-center bg-white dark:bg-stone-900">
+    <nav class=" flex max-w-5xl w-11/12 mx-auto justify-center bg-white dark:bg-stone-900">
       <div class="max-w-screen-xl  mx-auto p-4">
         <div class="grid grid-flow-col gap-10 items-center justify-center mr-48">
           <div>
@@ -17,13 +15,13 @@ function Navbar() {
             </a>
           </div>
           <div className="">
-            <Link to="/">
+            <a href="/">
               <img
-                src={require("../assets/img/light.png")}
+                src={require("../assets/light.png")}
                 class="w-12 h-12 animate-pulse"
                 alt="Personal Logo"
               />
-            </Link>
+            </a>
           </div>
           <div>
             <a href="https://www.instagram.com/21shots_media/" target="_blank" rel="noreferrer">
